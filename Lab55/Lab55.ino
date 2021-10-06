@@ -58,6 +58,7 @@ char operacion = 0;
 int poti1 = 0;
 int poti2 = 0;
 
+
 //*****************************************************************************
 // Configuración
 //*****************************************************************************
@@ -88,6 +89,24 @@ void setup() {
 //*****************************************************************************
 // Loop principal
 //*****************************************************************************
+
+void loop() {
+
+  voltaje = analogReadMilliVolts(pot1) / 10.0;        // Separar valores del voltaje P1
+  int temp = voltaje;
+  decenas1 = temp / 100.0;
+  temp = temp - decenas1 *100.0;
+  unidades1 = temp / 10.0;
+  temp = temp - unidades1 *10.0;
+  decimal1 = temp;
+
+  voltaje2 = analogReadMilliVolts(pot2) / 10.0;       // Separar valores del voltaje P2
+  int temp2 = voltaje2;
+  decenas2 = temp2 / 100.0;
+  temp2 = temp2 - decenas2 *100.0;
+  unidades2 = temp2 / 10.0;
+  temp2 = temp2 - unidades2 *10.0;
+  decimal2 = temp2;
 
 //*****************************************************************************
 // Funcion UART
