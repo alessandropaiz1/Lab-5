@@ -109,6 +109,14 @@ void loop() {
   decimal2 = temp2;
 
   UART();
+
+  int cnt = contador;                                 // Separar valores del contador 
+  centenas = contador / 100.0;
+  cnt = cnt - centenas * 100.0;
+  decenas = cnt / 10.0;
+  cnt = cnt - decenas * 10.0;
+  unidades = cnt;
+
 //*****************************************************************************
 // Funcion UART
 //*****************************************************************************
