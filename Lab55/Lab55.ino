@@ -14,6 +14,24 @@
 //*****************************************************************************
 // Definición de pines
 //*****************************************************************************
+
+#define d4 26            // Definir pines del display
+#define d5 25            
+#define d6 33
+#define d7 32
+#define en 12
+#define rs 13
+
+#define b1 4             // Definir botones
+#define b2 0
+
+#define pot1 36          // Definir potenciometros
+#define pot2 39
+
+#define ledRojo 19
+#define ledVerde 5
+#define ledAzul 18
+
 //*****************************************************************************
 // Variables Globales
 //*****************************************************************************
