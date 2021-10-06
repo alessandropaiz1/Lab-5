@@ -102,3 +102,20 @@ void UART (void){
     Serial.print(unidades2);
     Serial.println(decimal2);
     
+    if (operacion == '+'){
+      contador++;
+      if (contador > 255){
+        contador = 0;
+      }
+    }
+    
+    if (operacion == '-'){
+      contador--;
+      if (contador < 0){
+        contador = 255;
+      }
+
+    }
+
+  }
+}
