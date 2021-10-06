@@ -88,3 +88,17 @@ void setup() {
 //*****************************************************************************
 // Funcion UART
 //*****************************************************************************
+void UART (void){
+  if (Serial.available() > 0){
+    operacion = Serial.read();
+    Serial.print("Potenciometro 1: ");
+    Serial.print(decenas1);
+    Serial.print('.');
+    Serial.print(unidades1);
+    Serial.println(decimal1);
+    Serial.print("Potenciometro 2: ");
+    Serial.print(decenas2);
+    Serial.print('.');
+    Serial.print(unidades2);
+    Serial.println(decimal2);
+    
