@@ -61,6 +61,15 @@ void setup() {
   Serial.begin(115200);                    // Configuración serial 
  
   LCD.begin(16, 2);                        // Configurar LCD 16*2
+
+  pinMode(ledRojo, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
+  pinMode(ledAzul, OUTPUT);
+
+  digitalWrite(ledRojo, 0);
+  digitalWrite(ledVerde, 0);
+  digitalWrite(ledAzul, 0);
+  
 }
 
 //*****************************************************************************
