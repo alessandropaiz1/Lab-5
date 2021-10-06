@@ -117,6 +117,30 @@ void loop() {
   cnt = cnt - decenas * 10.0;
   unidades = cnt;
 
+  LCD.clear();
+  LCD.print("Rojo:");
+
+  LCD.setCursor(1, 0);                                 // Imprimir valores separados de Pot1
+  LCD.print(decenas1);
+  LCD.print('.');
+  LCD.print(unidades1);
+  LCD.print(decimal1);
+
+  LCD.setCursor(0, 6);                                 // Imprimir valores separados de Pot2
+  LCD.print("Verde:");
+  LCD.setCursor(1, 6);
+  LCD.print(decenas2);
+  LCD.print('.');
+  LCD.print(unidades2);
+  LCD.print(decimal2);
+
+  LCD.setCursor(0, 13);                                 // Imprimir valores separados del contador
+  LCD.print("CPU");
+  LCD.setCursor(1, 13);
+  LCD.print(centenas);
+  LCD.print(decenas);
+  LCD.print(unidades);
+
 //*****************************************************************************
 // Funcion UART
 //*****************************************************************************
