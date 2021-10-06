@@ -70,6 +70,15 @@ void setup() {
   digitalWrite(ledVerde, 0);
   digitalWrite(ledAzul, 0);
   
+  ledcSetup(1, 50, 8);         // Configuración de led verde
+  ledcAttachPin(ledRojo, 1);
+  
+  ledcSetup(2, 50, 8);         // Configuración de led rojo
+  ledcAttachPin(ledVerde, 2);
+
+  ledcSetup(3, 50, 8);         // Configuración de led azul
+  ledcAttachPin(ledAzul, 3);
+
 }
 
 //*****************************************************************************
