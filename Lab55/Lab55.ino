@@ -141,6 +141,18 @@ void loop() {
   LCD.print(decenas);
   LCD.print(unidades);
 
+  poti1 = analogRead(pot1);
+  ledcWrite(1, poti1/4);
+  
+  poti2 = analogRead(pot2);
+  ledcWrite(2, poti2/4);
+  
+  ledcWrite(3, contador);
+  
+  delay(250);
+
+}
+
 //*****************************************************************************
 // Funcion UART
 //*****************************************************************************
